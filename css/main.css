@@ -14,14 +14,17 @@ body{
 }
 .flex-container{
   display:flex;
+  background: #fff;
 }
 .box{
   height:100px;
   min-width:100px;
   float: left;
+  flex-grow: 1;
 }
 .one{
   background: red;
+  flex-shrink: 2;
 }
 .two{
   background: blue;

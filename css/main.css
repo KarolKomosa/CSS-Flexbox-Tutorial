@@ -7,28 +7,44 @@ body{
   background: #eee;
 }
 
+body{
+  background: #eee;
+}
 .wrapper{
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
-.flex-container{
-  display:flex;
-  background: #fff;
+nav{
+  background: #333;
+
+
 }
-.box{
-  height:100px;
-  min-width:100px;
-  float: left;
-  flex-grow: 1;
+nav ul{
+  list-style-type:none;
+  padding:0px;
+
 }
-.one{
-  background: red;
-  flex-shrink: 2;
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color:#fff;
+  display:block;
+  padding: 10px;
+  
 }
-.two{
-  background: blue;
+nav a:hover{
+  background-color: #555;
 }
-.three{
-  background: green;
+@media screen and (min-width:768px){
+  nav ul {
+    display:flex;
+    justify-content: center;
+  }
+  nav li{
+    flex: 1 1 0;
+  }
+
+
+
 }
